@@ -74,4 +74,14 @@ public class ControllerImpl implements AlternateMvcController {
   public Puzzle getActivePuzzle() {
     return model.getActivePuzzle();
   }
+  public int getNumberOfPuzzles() {
+    return model.getPuzzleLibrarySize();
+  }
+
+  public boolean getIsIllegal(int r, int c) {
+    return model.isLampIllegal(r, c);
+  }
+  public int getIndex() {
+    return model.getActivePuzzleIndex();
+  }
 }
