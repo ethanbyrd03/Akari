@@ -26,12 +26,11 @@ public class AppLauncher extends Application {
     stage.setScene(scene);
     scene.getStylesheets().add("main.css");
     model.addObserver(
-            (Model m) -> {
-              scene.setRoot(view.render());
-              stage.sizeToScene();
-            });
+        (Model m) -> {
+          scene.setRoot(view.render());
+          stage.sizeToScene();
+        });
     stage.setTitle("Akari");
     stage.show();
-
   }
 }
